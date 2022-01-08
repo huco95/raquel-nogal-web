@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center min-h-screen font-special-elite text-text">
+  <div class="flex items-center justify-center min-h-screen text-text">
 
       <div class="max-w-screen-lg my-4">
           <h1 class="mb-2 text-5xl font-bold leading-tight text-center font-kalam md:text-6xl">RAQUEL NOGAL</h1>
@@ -20,8 +20,9 @@
 
           <div class="px-4">
               <div class="flex flex-wrap items-center my-8 -mx-4">
-                  <div class="w-full px-4 md:w-2/6">
-                      <img src="~/assets/imgs/raquel.jpg" class="object-cover w-full h-56 rounded-lg md:h-auto shadow-image" alt="Raquel Nogal">
+                  <div class="w-full px-4 md:w-2/6" height="400" width="300">
+                      <img src="~/assets/imgs/raquel.jpg" alt="Raquel Nogal"
+                       class="object-cover w-full h-56 rounded-lg md:h-auto shadow-image">
                   </div>
 
                   <div class="w-full px-4 mt-4 md:w-4/6 md:m-auto">
