@@ -20,8 +20,8 @@
 
           <div class="px-4">
               <div class="flex flex-wrap items-center my-8 -mx-4">
-                  <div class="w-full px-4 md:w-2/6" height="400" width="300">
-                      <img src="/imgs/raquel.webp" alt="Raquel Nogal"
+                  <div class="w-full px-4 md:w-2/6">
+                      <img src="/imgs/raquel.webp" alt="Raquel Nogal" height="412" width="309"
                        class="object-cover w-full h-56 rounded-lg md:h-auto shadow-image">
                   </div>
 
