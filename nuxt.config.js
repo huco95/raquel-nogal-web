@@ -2,6 +2,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  render: {
+    injectScripts: false
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Raquel Nogal',
