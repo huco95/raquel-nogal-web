@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center min-h-screen bg-background font-special-elite text-text">
+    <div class="flex justify-center min-h-screen bg-background text-text">
       <div class="max-w-screen-lg m-4">
         <div class="flex flex-wrap items-center justify-center mx-2 mb-2 sm:justify-between">
           <h1 class="mr-4 text-5xl font-bold leading-tight">Publicaciones</h1>

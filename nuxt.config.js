@@ -22,6 +22,19 @@ export default {
     '@/assets/css/main.css',
   ],
 
+  // Google fonts: https://google-fonts.nuxtjs.org/options
+  googleFonts: {
+    prefetch: true,
+    preconect: true,
+    preload: true,
+    useStylesheet: true,
+    display: 'optional',
+    families: {
+      Roboto: true,
+      Kalam: true
+    }
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
@@ -31,6 +44,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxt/postcss8',
+    '@nuxtjs/google-fonts',
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
   ],
