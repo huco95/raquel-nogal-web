@@ -28,7 +28,7 @@ export default {
     preconect: true,
     preload: true,
     useStylesheet: true,
-    display: 'optional',
+    display: 'swap',
     families: {
       Roboto: true,
       Kalam: true
