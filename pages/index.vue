@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center justify-center min-h-screen">
-    <div>
+    <div class="my-4">
       <h1
         class="mb-2 text-5xl font-bold leading-tight text-center font-kalam md:text-6xl"
       >
