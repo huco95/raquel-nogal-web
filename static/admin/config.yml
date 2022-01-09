@@ -8,7 +8,8 @@ public_folder: /imgs/uploads
 
 collections:
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
-    label: 'Blog' # Used in the UI
+    label: 'Blog Posts' # Used in the UI
+    label_singular: 'Blog Post'
     folder: 'content/blog' # The path to the folder where the documents are stored
     format: 'frontmatter' # This is important for consuming content in Nuxt with the nuxt/content module
     create: true # Allow users to create new documents in this collection
