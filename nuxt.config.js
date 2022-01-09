@@ -3,7 +3,7 @@ export default {
   target: 'static',
 
   render: {
-    injectScripts: false
+    injectScripts: false,
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -15,16 +15,18 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Web CV y portfolio de la periodista Raquel Nogal' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Web CV y portfolio de la periodista Raquel Nogal',
+      },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/assets/css/main.css',
-  ],
+  css: ['@/assets/css/main.css'],
 
   // Google fonts: https://google-fonts.nuxtjs.org/options
   googleFonts: {
@@ -35,8 +37,8 @@ export default {
     display: 'swap',
     families: {
       Roboto: true,
-      Kalam: true
-    }
+      Kalam: true,
+    },
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -71,4 +73,4 @@ export default {
       },
     },
   },
-}
+};

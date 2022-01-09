@@ -3,5 +3,29 @@
 @tailwind utilities;
 
 html {
-  @apply font-roboto;
+  @apply flex justify-center font-roboto;
+}
+
+body {
+  @apply max-w-screen-lg;
+}
+
+/*--------------- BLOG ---------------*/
+.nuxt-content h2 {
+  @apply mb-3 text-2xl font-bold;
+}
+.nuxt-content h3 {
+  @apply mb-3 text-xl font-bold;
+}
+.nuxt-content p {
+  @apply mb-5;
+}
+
+.nuxt-content-container {
+  @apply mt-4 mb-8;
+}
+
+.icon.icon-link {
+  background-image: url('~assets/svg/icon-hashtag.svg');
+  @apply inline-block w-4 h-4 bg-auto;
 }
