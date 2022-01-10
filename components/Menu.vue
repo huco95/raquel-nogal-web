@@ -1,19 +1,24 @@
 export
 <template>
   <nav class="flex items-center justify-center w-full -mx-4 sm:w-auto">
+    <pre>{{ slug }}</pre>
+
     <NuxtLink
+      v-if="path != '/'"
       to="/"
       class="px-4 text-black rounded hover:bg-slate-600 hover:text-white"
     >
       Inicio
     </NuxtLink>
     <NuxtLink
+      v-if="path != '/portfolio'"
       to="/portfolio"
       class="px-4 text-black rounded hover:bg-slate-600 hover:text-white"
     >
       Portfolio
     </NuxtLink>
     <NuxtLink
+      v-if="path != '/blog'"
       to="/blog"
       class="px-4 text-black rounded hover:bg-slate-600 hover:text-white"
     >
@@ -74,5 +79,8 @@ export
 <script>
 export default {
   name: 'RaquelMenu',
+  data({ $route }) {
+    return { path: $route.path };
+  },
 };
 </script>
