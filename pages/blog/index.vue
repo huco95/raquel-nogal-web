@@ -7,7 +7,7 @@
       <Menu />
     </div>
 
-    <div v-if="posts && posts.length > 0" class="m-4">
+    <div v-if="posts.length > 0" class="m-4">
       <BlogPostCard v-for="post of posts" :key="post.slug" :post="post" />
     </div>
     <div v-else class="m-4">
@@ -24,10 +24,13 @@
 export default {
   name: 'BlogIndex',
   async asyncData({ $content }) {
-    const posts = await $content('blog')
-      .only(['title', 'description', 'createdAt', 'slug'])
-      .sortBy('createdAt', 'asc')
-      .fetch();
+    let posts = [];
+    try {
+      posts = await $content('blog')
+        .only(['title', 'description', 'createdAt', 'slug'])
+        .sortBy('createdAt', 'asc')
+        .fetch();
+    } catch {}
 
     return { posts };
   },
