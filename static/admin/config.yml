@@ -6,6 +6,10 @@ backend:
 media_folder: 'static/imgs/uploads' # Media files will be stored in the repo under static/imgs/uploads
 public_folder: /imgs/uploads
 
+display_url: https://raquel-nogal.netlify.app/
+logo_url: https://raquel-nogal.netlify.app/imgs/logo.svg
+locale: 'es'
+
 collections:
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
     label: 'Blog Posts' # Used in the UI
