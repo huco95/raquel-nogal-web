@@ -63,10 +63,24 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+
+    // https://sitemap.nuxtjs.org
+    '@nuxtjs/sitemap'
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  // https://sitemap.nuxtjs.org/usage/sitemap
+  sitemap: {
+    hostname: 'https://raquel-nogal.netlify.app/',
+    gzip: true,
+    exclude: [
+      '/admin/**'
+    ],
+    // TODO: generate routes for blog posts
+    // routes: async () => {}
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
