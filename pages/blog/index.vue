@@ -1,11 +1,6 @@
 <template>
-  <div class="mx-4 mt-4">
-    <div
-      class="flex flex-wrap items-center justify-center mx-2 mb-2 sm:justify-between"
-    >
-      <h1 class="mr-4 text-5xl font-bold leading-tight font-kalam">BLOG</h1>
-      <Menu />
-    </div>
+  <div>
+    <Header page-name="BLOG" />
 
     <div v-if="posts.length > 0" class="m-4">
       <BlogPostCard v-for="post of posts" :key="post.slug" :post="post" />
@@ -23,6 +18,7 @@
 <script>
 export default {
   name: 'BlogIndex',
+  layout: 'content',
   async asyncData({ $content }) {
     let posts = [];
     try {

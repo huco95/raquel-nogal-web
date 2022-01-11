@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-4 mt-4">
+  <div>
     <a
       href="/blog"
       class="flex items-center gap-2 font-bold text-primary hover:underline"
@@ -35,6 +35,7 @@
 
 <script>
 export default {
+  layout: 'content',
   async asyncData({ $content, params }) {
     const post = await $content('blog', params.slug).fetch();
 
