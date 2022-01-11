@@ -17,7 +17,16 @@
           var title = entry.getIn(['data', 'title']);
           var body = this.props.widgetFor('body');
 
-          return h('div', {}, h('h1', {}, title), h('div', {}, body));
+          return h(
+            'div',
+            {},
+            h(
+              'h1',
+              { className: 'mt-2 text-4xl text-center text-gray-700' },
+              title
+            )
+            // h('div', {}, body)
+          );
         },
       });
 
