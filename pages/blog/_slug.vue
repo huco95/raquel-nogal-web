@@ -34,6 +34,7 @@
 </template>
 
 <script>
+import dateMixin from '~/mixins/dateMixin.js';
 export default {
   layout: 'content',
   async asyncData({ $content, params }) {
@@ -47,11 +48,6 @@ export default {
 
     return { post, prev, next };
   },
-  methods: {
-    formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      return new Date(date).toLocaleDateString('es', options);
-    },
-  },
+  mixins: [dateMixin],
 };
 </script>

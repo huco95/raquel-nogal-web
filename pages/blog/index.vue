@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import dateMixin from '~/mixins/dateMixin.js';
 export default {
   name: 'BlogIndex',
   layout: 'content',
@@ -30,11 +31,6 @@ export default {
 
     return { posts };
   },
-  methods: {
-    formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      return new Date(date).toLocaleDateString('es', options);
-    },
-  },
+  mixins: [dateMixin],
 };
 </script>

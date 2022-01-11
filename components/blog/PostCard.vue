@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import dateMixin from '~/mixins/dateMixin.js';
 export default {
   props: {
     post: {
@@ -24,11 +25,6 @@ export default {
       required: true,
     },
   },
-  methods: {
-    formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      return new Date(date).toLocaleDateString('es', options);
-    },
-  },
+  mixins: [dateMixin],
 };
 </script>
