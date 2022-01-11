@@ -10,5 +10,18 @@
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+      var GeneralPreview = createClass({
+        render: function () {
+          var entry = this.props.entry;
+          var title = entry.getIn(['data', 'title']);
+          var body = this.props.widgetFor('body');
+
+          return h('div', {}, h('h1', {}, title), h('div', {}, body));
+        },
+      });
+
+      CMS.registerPreviewTemplate('general', GeneralPreview);
+    </script>
   </body>
 </html>
