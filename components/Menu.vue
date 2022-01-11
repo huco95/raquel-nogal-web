@@ -1,8 +1,6 @@
 export
 <template>
   <nav class="flex items-center justify-center w-full -mx-4 sm:w-auto">
-    <pre>{{ slug }}</pre>
-
     <NuxtLink
       v-if="path != '/'"
       to="/"
