@@ -26,7 +26,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/css/main.css'],
+  css: ['~/assets/css/main.css'],
 
   // Google fonts: https://google-fonts.nuxtjs.org/options
   googleFonts: {
@@ -66,6 +66,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extractCSS: true,
     postcss: {
       plugins: {
         tailwindcss: {},
