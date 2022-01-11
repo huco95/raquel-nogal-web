@@ -1,31 +1,31 @@
 export
 <template>
-  <nav class="flex items-center justify-center w-full -mx-4 sm:w-auto">
+  <nav class="flex items-center justify-center w-full gap-2 -mx-4 sm:w-auto">
     <NuxtLink
       v-if="path != '/'"
       to="/"
-      class="px-4 text-black rounded hover:bg-slate-600 hover:text-white"
+      class="px-4 py-0.5 text-black rounded hover:bg-slate-600 hover:text-white"
     >
       Inicio
     </NuxtLink>
     <NuxtLink
       v-if="path != '/portfolio'"
       to="/portfolio"
-      class="px-4 text-black rounded hover:bg-slate-600 hover:text-white"
+      class="px-4 py-0.5 text-black rounded hover:bg-slate-600 hover:text-white"
     >
       Portfolio
     </NuxtLink>
     <NuxtLink
       v-if="path != '/blog'"
       to="/blog"
-      class="px-4 text-black rounded hover:bg-slate-600 hover:text-white"
+      class="px-4 py-0.5 text-black rounded hover:bg-slate-600 hover:text-white"
     >
       Blog
     </NuxtLink>
     <a
       href="/CV_RaquelNogal_EN.pdf"
       target="_blank"
-      class="flex items-center px-4 text-black rounded hover:bg-slate-600 hover:text-white"
+      class="flex items-center px-4 py-0.5 text-black rounded hover:bg-slate-600 hover:text-white"
     >
       <span class="mr-2">CV</span>
       <svg viewBox="0 0 512 512" height="15px">
@@ -55,7 +55,7 @@ export
     <a
       href="/CV_RaquelNogal_EN.pdf"
       target="_blank"
-      class="flex items-center px-4 text-black rounded hover:bg-slate-600 hover:text-white"
+      class="flex items-center px-4 py-0.5 text-black rounded hover:bg-slate-600 hover:text-white"
     >
       <span class="mr-2">CV</span>
       <svg viewBox="0 0 512 512" height="15px">
